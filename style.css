@@ -212,3 +212,76 @@ h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-bottom: 20px; }
 }
 
 .btn-tg:hover { background: #229ed9; border-color: #229ed9; }
+
+/* ===== Адаптация под планшеты и телефоны ===== */
+
+/* На сенсорных экранах hover «залипает» после тапа — отключаем подъём карточек */
+@media (hover: none) {
+  .card:hover, .work:hover, .btn:hover { transform: none; }
+  .work:hover .work-img { transform: none; }
+  .card:hover { border-color: var(--border); }
+}
+
+/* Планшеты: карточки в две колонки вместо одной огромной */
+@media (max-width: 860px) and (min-width: 561px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  /* Пункты мобильного меню перекрывались правилом выше — возвращаем удобную зону нажатия */
+  .nav-links a { padding: 14px 16px; border-radius: 12px; }
+  .nav-links a:active { background: rgba(255,255,255,.06); }
+  .nav { padding: 12px 20px; }
+  .burger { width: 44px; height: 32px; }
+  .burger span { left: 8px; width: 28px; }
+  .burger span:first-child { top: 10px; }
+  .burger span:last-child { bottom: 10px; }
+  .burger.open span:first-child { top: 15px; }
+  .burger.open span:last-child { bottom: 15px; }
+
+  .hero { gap: 32px; padding-bottom: 20px; }
+  .hero-card { max-width: 440px; width: 100%; margin: 0 auto; }
+  .section h2 { margin-bottom: 28px; }
+}
+
+/* Телефоны */
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Фоновые пятна поменьше — меньше нагрузка на GPU и не «заливают» экран */
+  .b1 { width: 300px; height: 300px; }
+  .b2 { width: 280px; height: 280px; }
+  .b3 { width: 200px; height: 200px; }
+  .blob { filter: blur(70px); }
+
+  .hero { padding-top: 28px; }
+  .badge { font-size: .8rem; margin-bottom: 18px; }
+  h1 { font-size: clamp(1.9rem, 9vw, 2.4rem); margin-bottom: 16px; }
+  .lead { font-size: 1rem; margin-bottom: 26px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { justify-content: center; width: 100%; }
+
+  .hero-card { padding: 32px 20px; border-radius: 24px; }
+  .avatar { width: 96px; height: 96px; font-size: 1.6rem; }
+  .stats { gap: 8px; }
+  .stats b { font-size: .95rem; }
+  .stats span { font-size: .75rem; }
+
+  .section { padding: 48px 0; }
+  .about p { font-size: 1.05rem; }
+  .tags span { padding: 6px 12px; font-size: .85rem; }
+
+  .card { padding: 24px; }
+  .icon { width: 52px; height: 52px; font-size: 1.7rem; margin-bottom: 16px; }
+
+  .contact { padding: 44px 20px; border-radius: 24px; }
+  .contact > p { font-size: 1rem; }
+  .contact-links .btn { width: 100%; justify-content: center; }
+}
+
+/* Очень узкие экраны (iPhone SE и т.п.) */
+@media (max-width: 360px) {
+  main { padding: 0 12px; }
+  .nav { width: calc(100% - 24px); }
+  .stats b { font-size: .85rem; }
+}
