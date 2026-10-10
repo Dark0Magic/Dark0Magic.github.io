@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dark0magic.github.io/sitemap.xml
