@@ -267,3 +267,72 @@ h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-bottom: 20px; }
   .nav-links a { padding: 10px 5px; font-size: .8rem; }
   .stats b { font-size: .85rem; }
 }
+
+/* ===== Страницы услуг и переключатель языка ===== */
+.nav-links .lang {
+  flex: none; padding: 4px 12px; border-radius: 100px; font-size: .85rem; font-weight: 700;
+  color: var(--text); border: 1px solid var(--border); background: var(--surface);
+}
+.nav-links .lang::after { display: none; }
+.nav-links .lang:hover { border-color: var(--accent); }
+
+/* Карточки услуг-ссылки на главной */
+.grid.services { grid-template-columns: repeat(4, 1fr); }
+a.card { display: flex; flex-direction: column; }
+a.card p { flex: 1; }
+.card .more { margin-top: 18px; font-weight: 600; color: var(--accent-2); }
+@media (max-width: 1060px) and (min-width: 561px) { .grid.services { grid-template-columns: repeat(2, 1fr); } }
+
+.page-hero { padding: 70px 0 20px; max-width: 820px; }
+.page-hero .lead { max-width: 680px; }
+.crumbs { font-size: .9rem; color: var(--muted); margin-bottom: 28px; }
+.crumbs a { color: var(--text); }
+.crumbs a:hover { color: var(--accent-2); }
+
+.checks { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 32px; }
+.checks li { position: relative; padding-left: 34px; color: var(--muted); font-size: 1.05rem; }
+.checks li::before {
+  content: "✓"; position: absolute; left: 0; top: .1em; width: 22px; height: 22px; border-radius: 50%;
+  display: grid; place-items: center; font-size: .75rem; font-weight: 800; color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+.steps { list-style: none; counter-reset: step; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 36px; }
+.steps li { counter-increment: step; padding: 28px 24px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); }
+.steps li::before {
+  content: counter(step); display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 16px;
+  border-radius: 12px; font-family: "Unbounded"; font-weight: 700; background: rgba(139,92,246,.2); color: #c4b5fd;
+}
+.steps h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.steps p { color: var(--muted); font-size: .95rem; }
+.tags-label { background: none !important; border: none !important; padding-left: 0 !important; color: var(--muted); }
+
+.faq { display: grid; gap: 12px; max-width: 820px; }
+.faq details { border-radius: 16px; background: var(--surface); border: 1px solid var(--border); padding: 0 24px; }
+.faq summary { cursor: pointer; list-style: none; padding: 20px 32px 20px 0; font-weight: 600; font-size: 1.05rem; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.4rem; color: var(--accent-2); transition: transform .2s; }
+.faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq details p { color: var(--muted); padding-bottom: 20px; }
+
+.other-services { padding: 0 0 40px; text-align: center; }
+.other-services h2 { font-size: 1.2rem; margin-bottom: 20px; }
+.other-services div { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.other-services a { padding: 12px 20px; border-radius: 100px; background: var(--surface); border: 1px solid var(--border); transition: border-color .2s; }
+.other-services a:hover { border-color: var(--accent); }
+
+@media (max-width: 860px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .page-hero { padding-top: 44px; }
+}
+@media (max-width: 560px) {
+  .grid.services, .grid-2, .checks, .steps { grid-template-columns: 1fr; }
+  .nav-links .lang { padding: 6px 9px; font-size: .78rem; }
+  .page-hero .hero-actions .btn { width: 100%; justify-content: center; }
+  .faq details { padding: 0 18px; }
+}
+@media (max-width: 400px) {
+  .nav-links a { padding: 10px 4px; font-size: .78rem; }
+  .nav-links .lang { padding: 5px 7px; }
+}

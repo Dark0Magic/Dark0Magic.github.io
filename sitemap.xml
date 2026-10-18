@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dark0magic.github.io/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/uz/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/sayt-na-zakaz/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/sayt-na-zakaz/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/sayt-yaratish/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/uz/sayt-yaratish/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/sayt-na-zakaz/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/sayt-yaratish/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/mobilnoe-prilozhenie/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/mobilnoe-prilozhenie/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/mobil-ilova/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/uz/mobil-ilova/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/mobilnoe-prilozhenie/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/mobil-ilova/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/telegram-bot/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/telegram-bot/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/telegram-bot/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/uz/telegram-bot/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/telegram-bot/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/telegram-bot/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/backend-nestjs/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/backend-nestjs/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/backend/"/>
+  </url>
+  <url>
+    <loc>https://dark0magic.github.io/uz/backend/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dark0magic.github.io/backend-nestjs/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://dark0magic.github.io/uz/backend/"/>
   </url>
 </urlset>
